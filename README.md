@@ -7,30 +7,30 @@
 
 ## Overview
 
-AppVault is a professional desktop tool for Windows that helps users:
+AppVault is a professional Windows desktop tool designed to help users:
 
-- Scan installed applications (HKLM + HKCU)
-- Match apps with WinGet packages
-- Generate consolidated PowerShell install commands
-- Directly reinstall apps with live progress and logging
-- Export templates and scripts for migration to other systems
+- Scan installed applications (HKLM + HKCU)  
+- Match apps with WinGet packages  
+- Generate consolidated PowerShell install commands  
+- Directly reinstall apps with live progress and logging  
+- Export templates and scripts for migration to other systems  
 
-Everything runs locally, no telemetry, no background services, no EXE required.
+Everything runs locally — no telemetry, no background services, no EXE required.
 
 ---
 
 ## Features
 
 ### System Scan
-- Detects manually installed applications
-- Excludes built-in Windows apps
-- Extracts app name, publisher, version, uninstall string
-- Searchable, sortable, selectable list
+- Detects manually installed applications  
+- Excludes built-in Windows apps  
+- Extracts: app name, publisher, version, uninstall string  
+- Searchable, sortable, selectable list  
 
 ### WinGet Integration
-- Auto-matches installed apps to WinGet packages
-- Flags apps that require manual installation
-- Suggests official website if no package exists
+- Automatically matches installed apps to WinGet packages  
+- Flags apps that require manual installation  
+- Suggests official website if no package exists  
 
 ### Installation Options
 - **PowerShell Command Mode:** copy, save `.ps1`, or run outside AppVault  
@@ -47,26 +47,8 @@ Everything runs locally, no telemetry, no background services, no EXE required.
 
 ---
 
-## Why AppVault?
-
-- Single `.py` file, fully portable  
-- Modular, production-ready architecture  
-- Clean professional dark-mode interface  
-- Secure: no telemetry, no cloud dependency, elevation only when needed  
-
----
-
-## Requirements
-
-- Windows 10 / 11  
-- Python 3.9+  
-- WinGet installed  
-- Administrator privileges recommended  
-
----
-
 ## Installation
 
+1. **Install Python dependencies**  
 ```bash
-pip install -r requirements.txt
-python AppVault.py
+pip install PySide6
